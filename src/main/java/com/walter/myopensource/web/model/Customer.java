@@ -7,27 +7,27 @@ import java.io.Serializable;
  */
 public class Customer implements Serializable{
 
-    private long id;
-    private String name;
+    private long userid;
+    private String username;
     private String password;
     private String telephone;
     private String email;
     private long level;
 
-    public long getId() {
-        return id;
+    public long getUserid() {
+        return userid;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setUserid(long userid) {
+        this.userid = userid;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {

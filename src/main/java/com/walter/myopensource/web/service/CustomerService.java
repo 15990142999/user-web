@@ -1,5 +1,6 @@
 package com.walter.myopensource.web.service;
 
+import com.walter.myopensource.web.helper.DatabaseHelper;
 import com.walter.myopensource.web.model.Customer;
 
 import java.util.List;
@@ -16,7 +17,8 @@ public class CustomerService {
      * @return
      */
     public List<Customer> getCustomerList(){
-        return null;
+        String sql = "select * from USER";
+        return DatabaseHelper.queryEntityList(Customer.class, sql);
     }
 
     public Customer getCustomer(long id){
